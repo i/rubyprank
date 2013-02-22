@@ -1,1 +1,1 @@
-web: bundle exec ruby prank.rb -p $PORT
+web: bundle exec ruby prank.rb
