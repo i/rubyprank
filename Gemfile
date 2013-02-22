@@ -1,5 +1,6 @@
 source 'https://rubygems.org', '~>3.1.4'
 gem 'builder'
+gem 'oauth'
 gem 'sinatra'
 gem 'twilio-ruby'
 gem 'haml'
