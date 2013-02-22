@@ -1,6 +1,10 @@
 !!!
-
 %html
-
+  %script(type='text/javascript' src='//static.twilio.com/libs/twiliojs/1.1/twilio.min.js')
   %body
-    %h1 MAKING CALL TO #{number1} AND #{number2}
+    %h1 MAKING CALL TO {number1} AND {number2}
+
+    :javascript
+      var conn = null;
+      Twilio.Device.setup('<%= token %>');
+      Twilio.Device.connect({"PhoneNumber": '6093067701'})

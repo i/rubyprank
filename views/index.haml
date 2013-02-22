@@ -5,8 +5,8 @@
     %title PrankRoulette - Screw Over Businesses
 
   %body
-    %h1 Call someone
+    %h1 Make two people call each other.
     %form(action='/call' method='POST')
-      %input(type='text' name='number1')
-      %input(type='text' name='number2')
+      %input(type='text' placeholder='Enter 1st #' size='10' name='number1')
+      %input(type='text' placeholder='Enter 2nd #' size='10' name='number2')
       %input(type='submit')
