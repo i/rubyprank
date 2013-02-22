@@ -1,12 +1,8 @@
-!!!
-
-%html
-  %head
-    %title PrankRoulette - Screw Over Businesses
-
-  %body
-    %h1 Make two people call each other.
+.row
+  .two.columns
+    Enter two phone numbers and listen to the phone call they have.
+  .ten.columns.centered
     %form(action='/call' method='POST')
       %input(type='text' placeholder='Enter 1st #' size='10' name='number1')
       %input(type='text' placeholder='Enter 2nd #' size='10' name='number2')
-      %input(type='submit')
+      %input(type='submit' value='Call')
