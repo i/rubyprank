@@ -37,6 +37,7 @@ post '/call' do
     haml :calling, :locals => {:number1 => params['number1'], :number2 => params['number2']}
     call1 = $client.account.calls.make "+14159686840", params['number1'], "http://twimlets.com/conference?Name=#{uuid}&Message=%20"
     call2 = $client.account.calls.make "+14159686840", params['number2'], "http://twimlets.com/conference?Name=#{uuid}&Message=%20"
+    call3 = $client.account.calls.make "+14159686840", params['number3'], "http://twimlets.com/conference?Name=#{uuid}&Message=%20"
 end
 
 
