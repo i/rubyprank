@@ -5,10 +5,6 @@ require 'oauth'
 require 'twilio-ruby'
 require 'uuid'
 
-twiliosid  = "AC566da319c49345fe4fbbbea81ada1de0"
-twilioauth = "741080b04bcb6c2471cf9439d939abce"
-appsid = 'APb99a0ecfdf3a3a1e3fbcc7359c72d9a0'
-
 $client = Twilio::REST::Client.new twiliosid, twilioauth
 $capability = Twilio::Util::Capability.new twiliosid, twilioauth
 $capability.allow_client_outgoing appsid
